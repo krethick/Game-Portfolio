@@ -445,6 +445,12 @@ article .icon {
    overflow: hidden; /* Hide overflow to clip the gradient */
 }
 
+.progress-bar-container1 {
+   width: 100%;
+   margin-top: 5px; /* Adjust margin as needed */
+   overflow: hidden; /* Hide overflow to clip the gradient */
+}
+
 /*
 .progress-bar-container {
    width: 100%;
@@ -921,7 +927,7 @@ height: 316px;
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 700px){
    .modal-content {
        width: 100%;
    }
@@ -1001,6 +1007,5 @@ height: 316px;
 .Continue:hover{
    background: rgb(195, 102, 102);
 }
-
 
 

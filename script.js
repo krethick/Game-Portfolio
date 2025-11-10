@@ -125,6 +125,7 @@ function showModal(imageSrc, altText) {
     var modal = document.getElementById('myModal6');
     modal.style.display = 'none';
   }
+  
 
 // Splash
 const splash = document.querySelector('.splash');
@@ -132,13 +133,6 @@ const splash = document.querySelector('.splash');
 function closeSplash() {
   splash.classList.add('display-none');
 }
-
-
-document.addEventListener('DOMContentLoaded', (e) => {
-  setTimeout(() => {
-      splash.classList.add('display-none');
-  }, 15000);
-});
 
 // Mute the rocket boost video
 document.getElementById('videoFrame').addEventListener('load', function () {
@@ -150,6 +144,13 @@ document.getElementById('videoFrame').addEventListener('load', function () {
     const video = iframeDoc.querySelector('video');
     if (video) video.muted = true;
   }
+});
+
+
+document.addEventListener('DOMContentLoaded', (e) => {
+  setTimeout(() => {
+      splash.classList.add('display-none');
+  }, 15000);
 });
 
 const header = document.querySelector('.header');
